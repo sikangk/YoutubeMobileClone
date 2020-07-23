@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YoutubeMobileClone</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://kit.fontawesome.com/8c6f125b71.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--상단 로고와 메뉴아이콘-->
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="logoTitle">Youtube</span>
+      </div>
+      <div class="menuIcon">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+    <!--동영상-->
+    <section class="player">
+      <video src="./video/Gamja.mp4" autoplay controls></video>
+    </section>
+    <!--동영상 소개-->
+    <div class="infoUpnext">
+      <section class="info">
+        <!--데이터-->
+        <div class="data">
+          <ul class="hashTags">
+            <li>#곽시강</li>
+            <li>#김이현</li>
+            <li>#김감자</li>
+          </ul>
+
+          <div class="titleAndButton">
+            <span class="title clamp">용맹한 김감자</span>
+            <button class="moreButton clicked">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+
+          <span class="view">100000 views</span>
+        </div>
+
+        <!--5개 버튼-->
+        <ul class="action">
+          <li>
+            <button><i class="fas fa-thumbs-up"></i>1K</button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i>0</button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i>Share</button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i>Save</button>
+          </li>
+          <li>
+            <button><i class="fas fa-font-awesome-flag"></i>Report</button>
+          </li>
+        </ul>
+        <!--채널정보-->
+        <div class="channel">
+          <div class="channelData">
+            <img src="./image/4.jpg" alt="#" />
+            <div class="chInfo">
+              <span class="name">감자야 놀자</span>
+              <span class="subscribers">1K subscribers</span>
+            </div>
+          </div>
+
+          <button class="subButton">subscribe</button>
+        </div>
+      </section>
+
+      <section class="upNext">
+        <span class="unTitle">Up Next</span>
+        <ul>
+          <li class="item">
+            <div class="itImg"><img src="./image/4.jpg" alt="#" /></div>
+            <div class="itemInfo">
+              <span class="itemTitle">갬성</span>
+              <span class="itName">곽시강</span>
+              <span class="itView">100K views</span>
+            </div>
+            <button class="itMore"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="itImg"><img src="./image/2.jpg" alt="#" /></div>
+            <div class="itemInfo">
+              <span class="itemTitle">인스타갬성</span>
+              <span class="itName">곽시강</span>
+              <span class="itView">100K views</span>
+            </div>
+            <button class="itMore"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="itImg"><img src="./image/1.jpg" alt="#" /></div>
+            <div class="itemInfo">
+              <span class="itemTitle">인스타갬성</span>
+              <span class="itName">곽시강</span>
+              <span class="itView">100K views</span>
+            </div>
+            <button class="itMore"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script src="./index.js" defer></script>
+  </body>
+</html>
